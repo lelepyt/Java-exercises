@@ -1,4 +1,3 @@
-package org.exercises.arrays
 
 public class Main {
 
