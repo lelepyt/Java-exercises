@@ -11,8 +11,6 @@ public class Main {
 		cards.shuffleDeck();
 		System.out.println("Shuffled deck:");
 		cards.output();
-		
-		
-
+		cards.printDeck();
 	}
 }

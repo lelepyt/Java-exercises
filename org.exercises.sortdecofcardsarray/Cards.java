@@ -64,7 +64,7 @@ public class Cards {
 	}
 
 	
-		   void swap(Card[] a, int i, int change) {
+	public void swap(Card[] a, int i, int change) {
 		        Card temp = a[i];
 		        a[i] = a[change];
 		        a[change] = temp;
