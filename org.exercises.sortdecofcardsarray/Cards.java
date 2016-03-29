@@ -9,7 +9,7 @@ public class Cards {
 	public Cards() {
 		fillDeck();
 	}
-	
+
 	public Card[] getDeck() {
 		return deck;
 	}
@@ -27,7 +27,6 @@ public class Cards {
 			}
 		}
 	}
-	
 
 	public void sortDeck() {
 		boolean swapped = true;
@@ -63,12 +62,9 @@ public class Cards {
 		}
 	}
 
-	
 	public void swap(Card[] a, int i, int change) {
-		        Card temp = a[i];
-		        a[i] = a[change];
-		        a[change] = temp;
-		    }
+		Card temp = a[i];
+		a[i] = a[change];
+		a[change] = temp;
+	}
 }
-
-	

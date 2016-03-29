@@ -1,6 +1,5 @@
 package cards;
 
-
 public class Main {
 
 	public static void main(String[] argv) {
@@ -11,5 +10,6 @@ public class Main {
 		cards.shuffleDeck();
 		System.out.println("Shuffled deck:");
 		cards.output();
+
 	}
 }

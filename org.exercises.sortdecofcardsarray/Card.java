@@ -2,7 +2,7 @@ package cards;
 
 import cards.Card;
 
-class Card  {
+class Card {
 	int number;
 	String suit;
 
