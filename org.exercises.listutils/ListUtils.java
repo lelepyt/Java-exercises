@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -12,14 +11,19 @@ public class ListUtils {
 		int value = 1;
 		String array[] = { "Volodya", "Vasyl", "Taras", "Andriy", "Yuriy" };
 		ListUtils ListUtils = new ListUtils(value);
-		ListUtils.addObject(array);
+		ListUtils.addObjectInListUsingForLoop(array);
+		ListUtils.addObjectInList("Olya");
 		ListUtils.checkList("Taras");
 		ListUtils.deleteObject(1);
 		ListUtils.deleteObject("Taras");
 		ListUtils.printObject();
 	}
 
-	public void addObject(String array[]) {
+	public void addObjectInList(String name) {
+		list.add(name);
+	}
+
+	public void addObjectInListUsingForLoop(String array[]) {
 		for (int i = 0; i < array.length; i++) {
 			list.add(array[i]);
 		}
