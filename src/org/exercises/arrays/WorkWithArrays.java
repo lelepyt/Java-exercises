@@ -47,5 +47,4 @@ public class WorkWithArrays {
 		System.out.println( "\nnumber of element: " + array2.length);
 
 	}
-
 }
