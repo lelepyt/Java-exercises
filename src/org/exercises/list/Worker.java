@@ -17,13 +17,14 @@ public class Worker {
 		worker.checkObject(name);
 		worker.printObject();
 	}
-	
+
 	public void addObject(String name) {
 		list.add(name);
 	}
-	
+
 	/**
-	 * Check List of unique
+	 * Check value for uniqueness in the list
+	 * 
 	 * @param name
 	 */
 	public void checkObject(String name) {
@@ -39,12 +40,7 @@ public class Worker {
 	public void printObject() {
 		System.out.println("Printed list:" + list.toString());
 	}
-	
-	/**
-	 * Choice list
-	 * 
-	 * @param i
-	 */
+
 	public Worker(int value) {
 		if (value == 1) {
 			list = new ArrayList<>();

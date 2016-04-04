@@ -43,8 +43,6 @@ public class WorkWithArrays {
 			array2[indexes] = tempArray2[randomElement1];
 			System.out.print(array2[indexes] + "; ");
 		}
-
 		System.out.println( "\nnumber of element: " + array2.length);
-
 	}
 }
