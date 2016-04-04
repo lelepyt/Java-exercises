@@ -18,7 +18,6 @@ public class Worker {
 		worker.printObject();
 	}
 	
-	
 	public void addObject(String name) {
 		list.add(name);
 	}
