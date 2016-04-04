@@ -13,13 +13,12 @@ public class Main {
 	}
 
 	public static void algo1(int[] array) {
-
+		int sumAllNumbers = 55;
 		for (int indexes = 0; indexes < 9; indexes++) {
 			entireAmountNumbers += array[indexes];
 		}
-		int namberElement = 55 - entireAmountNumbers;// 55 - is the sum of all
-														
-		System.out.println("(The first algorithm) missing number is: " + namberElement);
+		int numberElement = sumAllNumbers - entireAmountNumbers;
+		System.out.println("(The first algorithm) missing number is: " + numberElement);
 	}
 
 	public static void algo2(int[] array) {
