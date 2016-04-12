@@ -4,7 +4,7 @@ public class Worker {
 
 	private ListUtils listUtils;
 
-	public void addObjectsByListUtils(int numberObjects, String name) {
+	public void addObjectsToListUtils(int numberObjects, String name) {
 		long startTime = System.nanoTime();
 		for (int i = 0; i < numberObjects; i++) {
 			listUtils.addObjectInList(name);
@@ -15,7 +15,7 @@ public class Worker {
 		System.out.println("Time spent on adding objects: " + (oneNanoseconds) + " milliseconds");
 	}
 
-	public void getObjectsByListUtils(int firstFiveElements) {
+	public void getObjectsFromListUtils(int firstFiveElements) {
 		long startTime = System.nanoTime();
 		listUtils.getObjectFromist(firstFiveElements);
 		long endTime = System.nanoTime();
