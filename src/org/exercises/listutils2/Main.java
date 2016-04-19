@@ -17,7 +17,7 @@ public class Main {
 		int firstFiveElements = 50000;
 		String name = "Volodya";
 		Worker worker = new Worker(value);
-		worker.addObjectsByListUtils(numberObjects, name);
-		worker.getObjectsByListUtils(firstFiveElements);
+		worker.addObjectsToListUtils(numberObjects, name);
+		worker.getObjectsFromListUtils(firstFiveElements);
 	}
 }
