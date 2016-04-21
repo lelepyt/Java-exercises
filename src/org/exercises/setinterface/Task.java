@@ -1,48 +1,49 @@
-/*Set interface. You have to have a class User with fields like
- *  (username, age or something like that ). This class you have
- *   to use to create objects for storing in the Set collection. 
- *   For Set implementation you have to use TreeMap. You have to 
- *   store in the collection 10 objects. Then you should create 2 
- *   similar objects as are present in the collection 
- *   (same username, age etc) and try to store them in the collection.
- *    Accordingly the collection should not allow you to store the duplicates.
- */
+
 package org.exercises.setinterface;
 
 import java.util.Set;
 import java.util.TreeSet;
 
+//Set interface. You have to have a class User with fields like
+//(username, age or something like that ). This class you have
+//to use to create objects for storing in the Set collection. 
+//For Set implementation you have to use TreeMap. You have to 
+//store in the collection 10 objects. Then you should create 2 
+//similar objects as are present in the collection 
+//(same username, age etc) and try to store them in the collection.
+//Accordingly the collection should not allow you to store the duplicates.
+
 public class Task {
 	TreeSet<User> treeSet = new TreeSet<User>(User.getNameComparator());
 
-	public void addElements(Set set) {
-		set.add(new User("Volodya", "Zhemevko", "lelepyt", 19));
-		set.add(new User("Taras", "Shunkaryk", "limosha", 20));
-		set.add(new User("Andriy", "Kuklyak", "manchester", 20));
-		set.add(new User("Tolik", "Danulchenko", "tolik", 20));
-		set.add(new User("Vova", "Corniy", "corniy", 20));
-		set.add(new User("Vitalik", "Lotockiy", "vitalya", 20));
-		set.add(new User("Roma", "Kryckiy", "romaroma", 20));
-		set.add(new User("Andriy", "Dubyk", "andruha", 22));
-		set.add(new User("Kyryll", "Postynak", "karho", 21));
-		set.add(new User("Olexandr", "Lopatun", "lopata", 21));
+	public void addElementInSet(Set<User> set) {
+		String[] names = { "Volodya", "Taras", "Andriy", "Tolik", "Vova", "Vitalik", "Roma", "Andriy", "Kyryll",
+				"Olexandr" };
+		String[] surnames = { "Zhemevko", "Shunkaryk", "Kuklyak", "Danulchenko", "Corniy", "Lotockiy", "Kryckiy",
+				"Dubyk", "Postynak", "Lopatun" };
+		String[] usernames = { "lelepyt", "limosha", "manchester", "tolik", "corniy", "vitalya", "romaroma", "andruha",
+				"karho", "lopata", };
+		int[] ages = { 19, 20, 20, 20, 20, 20, 20, 22, 21, 21 };
+
+		for (int i = 0; i < 10; i++)
+			set.add(new User(names[i], surnames[i], usernames[i], ages[i]));
 	}
 
-	public void action1() {
-		addElements(treeSet);
-		print(treeSet);
+	public void addElementAndPrintoObjectFromSet() {
+		addElementInSet(treeSet);
+		printObjectFromSet(treeSet);
 	}
 
-	public void action2() {
+	public void addEqualElementAndPrintoSet() {
 		User user1 = new User("Volodya", "Zhemevko", "lelepyt", 19);
 		User user2 = user1;
 		treeSet.clear();
 		treeSet.add(user1);
 		treeSet.add(user2);
-		print(treeSet);
+		printObjectFromSet(treeSet);
 	}
 
-	public void print(Set<User> set) {
+	public void printObjectFromSet(Set<User> set) {
 		for (User u : set) {
 			System.out.println(u.name + "  " + u.surname + "  " + u.username + "  " + u.age);
 		}
@@ -51,7 +52,7 @@ public class Task {
 
 	public static void main(String[] args) {
 		Task task = new Task();
-		task.action1();
-		task.action2();
+		task.addElementAndPrintoObjectFromSet();
+		task.addEqualElementAndPrintoSet();
 	}
 }

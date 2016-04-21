@@ -3,34 +3,30 @@ package org.exercises.set;
 import java.util.Set;
 
 class MySet {
-	Set set;
+	Set<String> set;
 
-	public void setSet(Set s) {
+	public void setSet(Set<String> s) {
 		this.set = s;
 	}
 
-	public void addElements() {
-		set.add("Volodya");
-		set.add("London is");
-		set.add("the capital");
-		set.add("of");
-		set.add("Great Britain.");
-		set.add("Volodya");
+	public void addObjectInSet() {
+		String[] string = { "Volodya", "London is", "the capital", "of", "Great Britain.", "Volodya" };
+		for (String s : string) {
+			set.add(s);
+		}
 	}
 
-	public void addNULLs() throws NullPointerException {
+	public void addNULLsInSet() {
 		try {
-			set.add(null);
-			set.add(null);
-			set.add(null);
-			set.add(null);
-			set.add(null);
+			for (int i = 0; i < 10; i++) {
+				set.add(null);
+			}
 		} catch (NullPointerException n) {
 			System.out.println("I can`t add null pointer in this set");
 		}
 	}
 
-	public String toString() {
+	public String printSet() {
 		for (int i = 0; i < set.size(); i++) {
 			System.out.println(set.toArray()[i] + " ");
 		}
