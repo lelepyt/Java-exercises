@@ -14,45 +14,45 @@ import java.util.TreeSet;
 //Accordingly the collection should not allow you to store the duplicates.
 
 public class Task {
-	TreeSet<User> treeSet = new TreeSet<User>(User.getNameComparator());
+	Set<User> treeSet = new TreeSet<>(User.getNameComparator());
 
 	public void addElementInSet(Set<User> set) {
-		String[] names = { "Volodya", "Taras", "Andriy", "Tolik", "Vova", "Vitalik", "Roma", "Andriy", "Kyryll",
-				"Olexandr" };
-		String[] surnames = { "Zhemevko", "Shunkaryk", "Kuklyak", "Danulchenko", "Corniy", "Lotockiy", "Kryckiy",
-				"Dubyk", "Postynak", "Lopatun" };
-		String[] usernames = { "lelepyt", "limosha", "manchester", "tolik", "corniy", "vitalya", "romaroma", "andruha",
-				"karho", "lopata", };
+		String[] names = { "Volodya", "Taras", "Andriy", "Tolik", "Vova", 
+							"Vitalik", "Roma", "Andriy", "Kyryll",	"Olexandr" };
+		String[] surnames = { "Zhemevko", "Shunkaryk", "Kuklyak", "Danulchenko", "Corniy", 
+							"Lotockiy", "Kryckiy", "Dubyk", "Postynak", "Lopatun" };
+		String[] usernames = { "lelepyt", "limosha", "manchester", "tolik", "corniy", 
+							"vitalya", "romaroma", "andruha", "karho", "lopata", };
 		int[] ages = { 19, 20, 20, 20, 20, 20, 20, 22, 21, 21 };
 
 		for (int i = 0; i < 10; i++)
 			set.add(new User(names[i], surnames[i], usernames[i], ages[i]));
 	}
 
-	public void addElementAndPrintoObjectFromSet() {
+	public void addElementAndPrintoObjectsFromSet() {
 		addElementInSet(treeSet);
-		printObjectFromSet(treeSet);
+		printObjectsFromSet(treeSet);
 	}
 
-	public void addEqualElementAndPrintoSet() {
+	public void addEqualElementsAndPrinToSet() {
 		User user1 = new User("Volodya", "Zhemevko", "lelepyt", 19);
-		User user2 = user1;
-		treeSet.clear();
+		User user2 = user1;		
+		treeSet.clear();		
 		treeSet.add(user1);
 		treeSet.add(user2);
-		printObjectFromSet(treeSet);
+		printObjectsFromSet(treeSet);
 	}
 
-	public void printObjectFromSet(Set<User> set) {
+	public void printObjectsFromSet(Set<User> set) {
 		for (User u : set) {
-			System.out.println(u.name + "  " + u.surname + "  " + u.username + "  " + u.age);
+			System.out.println(u.name + "  " + u.surname + "  " + u.username + "  " + u.age );
 		}
 		System.out.println();
 	}
 
 	public static void main(String[] args) {
 		Task task = new Task();
-		task.addElementAndPrintoObjectFromSet();
-		task.addEqualElementAndPrintoSet();
+		task.addElementAndPrintoObjectsFromSet();
+		task.addEqualElementsAndPrinToSet();
 	}
 }

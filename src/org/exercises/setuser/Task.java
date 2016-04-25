@@ -20,8 +20,8 @@ import org.exercises.setinterface.User;
 //them in the collections. Accordingly the implementations should not 
 
 public class Task {
-	HashSet<User> hashSet = new HashSet<User>();
-	LinkedHashSet<User> linkedHashSet = new LinkedHashSet<User>();
+	Set<User> hashSet = new HashSet<User>();
+	Set<User> linkedHashSet = new LinkedHashSet<User>();
 
 	public void addElements(Set<User> set) {
 		String[] names = { "Volodya", "Taras", "Andriy", "Tolik", "Vova", "Vitalik", "Roma", "Andriy", "Kyryll",
@@ -37,14 +37,14 @@ public class Task {
 		}
 	}
 
-	public void addElementAndPrintoObjectFromSet() {
+	public void addElementAndPrintoObjectsFromSet() {
 		addElements(hashSet);
 		addElements(linkedHashSet);
 		printObjectFromSet(hashSet);
 		printObjectFromSet(linkedHashSet);
 	}
 
-	public void addEqualElementAndPrintoSet() {
+	public void addEqualElementsAndPrintoSet() {
 		User user1 = new User("Volodya", "Zhemevko", "lelepyt", 19);
 		User user2 = user1;
 		hashSet.clear();
@@ -67,7 +67,7 @@ public class Task {
 
 	public static void main(String[] args) {
 		Task task = new Task();
-		task.addElementAndPrintoObjectFromSet();
-		task.addEqualElementAndPrintoSet();
+		task.addElementAndPrintoObjectsFromSet();
+		task.addEqualElementsAndPrintoSet();
 	}
 }

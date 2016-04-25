@@ -17,21 +17,21 @@ public class Main {
 		// highest performance
 		MySet hashSet = new MySet();
 		hashSet.setSet(new HashSet<String>());
-		hashSet.addObjectInSet();
+		hashSet.addObjectsInSet();
 		hashSet.printSet();
 
 		// TreeSet contains objects in sorted order, but has the lowest
 		// performance
 		MySet treeSet = new MySet();
 		treeSet.setSet(new TreeSet<String>());
-		treeSet.addObjectInSet();
+		treeSet.addObjectsInSet();
 		treeSet.printSet();
 
 		// LinkedHashSet contains objects with saving their order of adding in
 		// the list, but has lower performance than HashSet
 		MySet linkedHashSet = new MySet();
 		linkedHashSet.setSet(new LinkedHashSet<String>());
-		linkedHashSet.addObjectInSet();
+		linkedHashSet.addObjectsInSet();
 		linkedHashSet.printSet();
 
 		hashSet.set.clear();

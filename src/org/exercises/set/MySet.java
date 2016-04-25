@@ -9,7 +9,7 @@ class MySet {
 		this.set = s;
 	}
 
-	public void addObjectInSet() {
+	public void addObjectsInSet() {
 		String[] string = { "Volodya", "London is", "the capital", "of", "Great Britain.", "Volodya" };
 		for (String s : string) {
 			set.add(s);
@@ -21,7 +21,7 @@ class MySet {
 			for (int i = 0; i < 10; i++) {
 				set.add(null);
 			}
-		} catch (NullPointerException n) {
+		} catch (NullPointerException ex) {
 			System.out.println("I can`t add null pointer in this set");
 		}
 	}
