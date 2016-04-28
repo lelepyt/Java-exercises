@@ -1,4 +1,4 @@
-package org.exercises.setsort;
+package org.exercises.set.setsort;
 
 import java.util.Comparator;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package org.exercises.listwithprimitivetypes;
+package org.exercises.lists.listwithprimitivetypes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,31 +8,31 @@ public class PrimitiveTypes {
 	public static void main(String[] args) {
 		List<Object> list = new ArrayList<>();
 		byte variableByte = 123;
-		String.valueOf( variableByte);
+		Byte convertVariableByte = Byte.valueOf(variableByte);
 		short variableShort = 32722;
-		String.valueOf( variableShort);
+		Short convertVariableShort = Short.valueOf(variableShort);
 		int variableInt = 21474836;
-		String.valueOf( variableInt);
+		Integer convertVariableInteger = Integer.valueOf(variableInt);
 		long variableLong = 32333333;
-		String.valueOf( variableLong);
+		Long convertVariableLong = Long.valueOf(variableLong);
 		float variableFloat = 31.24f;
-		String.valueOf( variableFloat);
+		Float convertVariableFloat = Float.valueOf(variableFloat);
 		boolean variableBoolean = true;
-		String.valueOf( variableBoolean);
+		Boolean convertVariableBoolean = Boolean.valueOf(variableBoolean);
 		char variableChar = 1044;
-		String.valueOf( variableChar);
+		Character convertVariableCharacter = Character.valueOf(variableChar);
 		double variableDouble = 123.1;
-		String.valueOf( variableDouble);
+		Double convertVariableDouble = Double.valueOf(variableDouble);
 
-		list.add(variableByte);
-		list.add(variableShort);
-		list.add(variableInt);
-		list.add(variableLong);
-		list.add(variableFloat);
-		list.add(variableBoolean);
-		list.add(variableChar);
-		list.add(variableDouble);
+		list.add(convertVariableByte);
+		list.add(convertVariableShort);
+		list.add(convertVariableInteger);
+		list.add(convertVariableLong);
+		list.add(convertVariableFloat);
+		list.add(convertVariableBoolean);
+		list.add(convertVariableCharacter);
+		list.add(convertVariableDouble);
 		System.out.println("This is all primitive types which are available in the list: " + list.toString());
-	}	
-		
+	}
+
 }

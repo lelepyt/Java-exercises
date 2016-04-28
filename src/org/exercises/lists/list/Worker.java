@@ -1,4 +1,4 @@
-package org.exercises.list;
+package org.exercises.lists.list;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

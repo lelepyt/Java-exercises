@@ -1,4 +1,4 @@
-package org.exercises.arrays1;
+package org.exercises.arrays.arrays1;
 
 public class Main {
 

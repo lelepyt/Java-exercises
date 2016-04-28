@@ -1,8 +1,9 @@
-package org.exercises.setinterface;
+package org.exercises.set.setinterface;
 
 import java.util.Comparator;
 
 public class User {
+	
 	public String name;
 	public String surname;
 	public String username;
@@ -21,7 +22,7 @@ public class User {
 		return nameComparator;
 	}
 
-	public static class NameComparator implements Comparator<Object> {
+	private static class NameComparator implements Comparator<Object> {
 		public int compare(Object o1, Object o2) {
 			return ((User) o1).name.compareTo(((User) o2).name);
 		}

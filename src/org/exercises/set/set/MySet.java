@@ -1,12 +1,17 @@
-package org.exercises.set;
+package org.exercises.set.set;
 
 import java.util.Set;
 
-class MySet {
-	Set<String> set;
+public class MySet {
+	
+	private Set<String> set;
 
 	public void setSet(Set<String> s) {
 		this.set = s;
+	}
+
+	public Set<String> getSet() {
+		return set;
 	}
 
 	public void addObjectsInSet() {
@@ -26,12 +31,11 @@ class MySet {
 		}
 	}
 
-	public String printSet() {
+	public void printSet() {
 		for (int i = 0; i < set.size(); i++) {
 			System.out.println(set.toArray()[i] + " ");
 		}
-		System.out.println();
-		return null;
+		System.out.print("\n");
 	}
 
 }

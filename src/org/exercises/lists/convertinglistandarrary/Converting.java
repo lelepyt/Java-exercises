@@ -1,4 +1,4 @@
-package org.exercises.convertinglistandarrary;
+package org.exercises.lists.convertinglistandarrary;
 
 import java.util.Arrays;
 import java.util.List;
