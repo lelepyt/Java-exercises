@@ -1,4 +1,4 @@
-package org.exercises.sortdeckofcardslist;
+package org.exercises.lists.sortdeckofcardslist;
 
 class Card  {
 	int number;

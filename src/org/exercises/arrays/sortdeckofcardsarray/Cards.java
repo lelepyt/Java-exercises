@@ -1,4 +1,4 @@
-package org.exercises.sortdeckofcardsarray;
+package org.exercises.arrays.sortdeckofcardsarray;
 
 import java.util.Random;
 

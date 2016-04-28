@@ -1,5 +1,4 @@
-
-package org.exercises.setinterface;
+package org.exercises.set.setinterface;
 
 import java.util.Set;
 import java.util.TreeSet;

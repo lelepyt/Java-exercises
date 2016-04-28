@@ -1,6 +1,6 @@
-package org.exercises.sortdeckofcardsarray;
+package org.exercises.arrays.sortdeckofcardsarray;
 
-class Card {
+public class Card {
 	int number;
 	String suit;
 

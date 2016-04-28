@@ -1,4 +1,4 @@
-package org.exercises.set;
+package org.exercises.set.set;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -12,6 +12,7 @@ import java.util.TreeSet;
 //store NULL in each Set implementation.
 
 public class Main {
+	
 	public static void main(String[] args) {
 		// HashSet contains objects without saving their order, but has the
 		// highest performance
@@ -34,15 +35,15 @@ public class Main {
 		linkedHashSet.addObjectsInSet();
 		linkedHashSet.printSet();
 
-		hashSet.set.clear();
+		hashSet.getSet().clear();
 		hashSet.addNULLsInSet();
 		hashSet.printSet();
 
-		treeSet.set.clear();
+		treeSet.getSet().clear();
 		treeSet.addNULLsInSet();
 		treeSet.printSet();
 
-		linkedHashSet.set.clear();
+		linkedHashSet.getSet().clear();
 		linkedHashSet.addNULLsInSet();
 		linkedHashSet.printSet();
 	}
